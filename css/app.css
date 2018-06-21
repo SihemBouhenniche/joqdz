@@ -1,0 +1,142 @@
+.transparent-block{
+  background-image: url(../img/back1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.5;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  
+}
+
+.transparent-block1{
+  background-image: url(../img/back1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.5;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+ 
+}
+.main-page{
+  margin-top: 70px;
+  text-align: center;
+  
+ 
+  position: relative;
+  background: rgba(23, 162, 184, 0.3);
+  font-family: 'Oswald', sans-serif;
+}
+
+
+.brand-title{
+  margin-top: 30px;
+}
+.brand-color{
+  color: #17a2b8;
+}
+.btn-main-2{
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 150px;
+}
+.btn-main-1{
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 150px;
+}
+.nav-page{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+  }
+  .brand{
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .separator{
+    width: 58%;
+  }
+  .btn-page{
+    margin-left: 15px;
+    width: 100px;
+  }
+  .content {
+  padding: 100px 40px 100px 40px;
+  font-family: 'Oswald', sans-serif;
+}
+.content h1 {
+  color: #17a2b8;
+}
+.content p{
+  font-size: 1.2em;
+}
+.containerimg{
+  position: relative;
+}
+.containerimg img {
+  position: absolute;
+  height: 80%;
+  width: 50%;
+}
+.img-1{
+  top: 0px;
+  left: 100px;
+}
+.img-2{
+  top: 80px;
+  left: 200px;
+}
+.footerpage{
+  padding:0;
+  background-color: #F0EDE5;
+  font-family: 'Oswald', sans-serif;
+}
+.iconlist{
+  background-color: #17a2b8;
+  color: #fff;
+  padding: 10px;
+}
+.iconlist  a{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.iconlist i{
+  color: #fff;
+}
+.footerpage h1{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.col-content{
+  padding: 20px 25px;
+}
+.col-content h1 {
+  color: #17a2b8;
+  border-bottom: solid 1px #B4B7BA;
+  padding-bottom: 10px;
+}
+.col-content p {
+  padding-top: 30px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.col-content ul{
+  list-style: none;
+  padding-top: 30px;
+  line-height: 2;
+}
+.copyright{
+  text-align: center;
+  font-weight: lighter;
+  background-color: #B4B7BA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

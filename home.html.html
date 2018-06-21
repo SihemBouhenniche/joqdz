@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>joq-v0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	<div id="app">
+		<div id="headerpage">
+      		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top nav-page">
+        	<a class="navbar-brand brand" href="#app">JOQ</a>
+        	<div class="separator"></div>
+        		<ul class="navbar-nav">
+          			<li class="nav-item">
+            			<a class="nav-link" href="#about">About us</a>
+          			</li>
+          			<li class="nav-item">
+            			<a class="nav-link" href="#how">How it works</a>
+          			</li>
+        		</ul>
+        		<button v-on:click="goClient" type="button" class="btn btn-info btn-page">Client</button>
+        		<button v-on:click="goFree" type="button" class="btn btn-info btn-page">Freelancer</button>
+        	</nav>
+  		</div>
+    	<!---------------------------------------------------------------------------------------->
+    	<div class="container-fluid main-page" style="padding-left: 0px;padding-right: 0px;">
+  			<div id="demo" class="carousel slide" data-ride="carousel">
+  				<!-- Indicators -->
+				<ul class="carousel-indicators">
+				   <li data-target="#demo" data-slide-to="0" class="active"></li>
+				   <li data-target="#demo" data-slide-to="1"></li>
+				</ul>
+  
+  				<!-- The slideshow -->
+			  	<div class="carousel-inner">
+			    	<div class="carousel-item active ">
+			     <!-- <img src="./img/back1.jpg" alt="Los Angeles" width="1100" height="500">-->
+			      	<div class="transparent-block"></div><br><br><br><br>
+
+			      <img src="img/logo.png">
+			      <h1 class="brand-title"><span class="brand-color">J</span>eune <span class="brand-color">O</span>ffre un service de <span class="brand-color">Q</span>ualité</h1>
+			      <button v-on:click="goClient" type="button" class="btn btn-dark btn-main-1 btn-lg">Client</button>
+			      <button v-on:click="goFree" type="button" class="btn btn-light btn-main-2 btn-lg">Freelancer</button><br><br><br><br><br><br><br><br><br><br><br>
+			    </div>
+    <div class="carousel-item">
+        <div class="transparent-block1"></div><br><br><br><br>
+
+        <img src="img/logo.png">
+        <h1 class="brand-title"><span class="brand-color">J</span>eune <span class="brand-color">O</span>ffre un service de <span class="brand-color">Q</span>ualité</h1>
+        <button v-on:click="goClient" type="button" class="btn btn-dark btn-main-1 btn-lg">Client</button>
+        <button v-on:click="goFree" type="button" class="btn btn-light btn-main-2 btn-lg">Freelancer</button><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+  
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>  
+</div>
+
+<!------------------------------------------------------------------------------------------>
+	<div class = "container-fluid content" v-for= "item in tabContent" :id="item.ID" v-bind:title="item.title" v-bind:description = "item.description" v-bind:style="{backgroundColor : item.color}" v-bind:right = "item.right" v-bind:link = "item.linkImg">
+	    <div class="row">
+	      	<div class="col-sm-6 containerimg" v-if= "item.right">
+		    	<img v-bind:src="item.linkImg[0]" class="rounded img-1">
+		    	<img v-bind:src="item.linkImg[1]" class="rounded img-2">
+		  	</div>
+	      	<div class="col-sm-6">
+		        <h1>{{item.title}}</h1>
+		        <p>{{item.description}}</p>
+	      	</div>
+	      	<div class="col-sm-6 containerimg" v-if= "!item.right">
+		    	<img v-bind:src="item.linkImg[0]" class="rounded img-1">
+		    	<img v-bind:src="item.linkImg[1]" class="rounded img-2">
+		  	</div>
+	    </div>
+	</div>
+
+
+<footer class="container-fluid footerpage">
+    <div class="container-fluid iconlist">
+      <div class="row">
+        <div class="col-sm-8">
+          <h1>Get connected with us on social networks ! </h1>
+        </div>
+        <div class="col-sm-4">
+            <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-content">
+        <h1>Company Name</h1>
+        <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="col-sm-3 col-content">
+        <h1>Products</h1>
+        <ul>
+          <li>MDBootstrap</li>
+          <li>MDWordPress</li>
+          <li>BrandFlow</li>
+          <li>Bootstrap Angular</li>
+        </ul>
+      </div>
+      <div class="col-sm-3 col-content">
+        <h1>Useful Links</h1>
+        <ul>
+          <li>Your Account</li>
+          <li>Become an Affiliate</li>
+          <li>Shipping Rates</li>
+          <li>Help</li> 
+        </ul>
+      </div>
+      <div class="col-sm-3 col-content">
+        <h1>Contact</h1>
+      </div>
+    </div>
+    <div class="container-fluid copyright">© 2018 Copyright: JOQ.com</div>
+  </footer>
+
+
+	</div>
+	  <script src="bootstrap/jquery-3.3.1.min.js"></script>
+  <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="bootstrap/vue.js"></script>
+  <script src="components/App.js"></script>
+  <script>
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+  </script>
+</body>
+</html>

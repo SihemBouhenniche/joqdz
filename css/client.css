@@ -1,0 +1,67 @@
+body{
+	font-family: 'Oswald', sans-serif;
+}
+.nav-page{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+  }
+  .brand{
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+.cadre{
+	position: absolute;
+	left:300px;
+	width: 800px;
+	border:solid 1px #b4b7ba;
+	border-radius: 20px;
+}
+.cadre-nav{
+	position: absolute;
+	left:300px;
+	width: 800px;
+	
+}
+/*.border1{
+	border-top:solid 1px #b4b7ba;
+	border-left:solid 1px #b4b7ba;
+	border-right: solid 1px #b4b7ba;
+	border-radius: 5px;
+}*/
+
+.form-style{
+
+	padding: 40px;
+	padding-top: 100px;
+
+	
+}
+.container-page{
+	background-color: #f0ede5;
+	min-height: 100vh;
+	overflow: hidden;
+}
+.container-page1{
+	background-color: #ffffff;
+	overflow: hidden;
+
+}
+.container-page2{
+	background-color: #f0ede5;
+
+}
+
+.h1{
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	color: #17a2b8;
+
+}
+.clientSign label{
+	font-family: 'Oswald', sans-serif;
+}
+ a{
+	font-family: 'Oswald', sans-serif;
+	color: #17a2b8;
+}

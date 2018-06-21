@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>joq-v0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/freelancerSignin.css">
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+</head>
+<body>
+
+	<div id="clientSignup">
+		<div id="headerpage">
+      		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top nav-page">
+        		<a class="navbar-brand brand" href="#app">JOQ</a>
+        	</nav>
+  		</div>
+  		<div id="freelancerform">
+      		<div class="contentForm">
+	        	<h1>Sign Up</h1>
+	        	<form>
+
+	          		<div class="form-group">
+	            		<label for="name">Name:</label>
+	            		<input type="text" class="form-control" id="name" placeholder="Enter your name" v-model = "name">
+	          		</div>
+
+
+	          		<div class="form-group">
+	            		<label for="email">Email address:</label>
+	            		<input type="email" class="form-control" id="email" placeholder="Enter your email" v-model = "email">
+	          		</div>
+
+
+	          		<div class="form-group">
+	            		<label for="address">Adresse:</label>
+	            		<input type="text" class="form-control" id="address" placeholder="Enter your adresse" v-model = "adresse">
+	          		</div>
+
+                    <div class="form-group">
+	            		<label for="phone">phone:</label>
+	            		<input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" v-model = "phone">
+	          		</div>
+
+
+	          		<div class="form-group">
+	            		<label for="tel">fax:</label>
+	            		<input type="number" class="form-control" id="fax" placeholder="Enter your fax number" v-model = "fax">
+	          		</div>
+
+
+
+
+
+	          		<div class="form-group">
+	            		<label for="pwd">Password:</label>
+	            		<input type="password" class="form-control" id="pwd" placeholder="Enter your password" v-model = "password">
+	          		</div>
+
+
+	          		<div class="form-group">
+	            		<label for="pwd">Confirm your password:</label>
+	            		<input type="passwordc" class="form-control" id="pwd" placeholder="Enter your password" v-model = "passwordc">
+	          		</div>
+	          		<button v-on:click="goMsg" type="submit" class="btn btn-info" >Sign Up</button>
+	        	</form>
+      		</div>
+    	</div>
+  	</div>
+  <script src="../bootstrap/jquery-3.3.1.min.js"></script>
+  <script src="../bootstrap/bootstrap.min.js"></script>
+  <script src="../bootstrap/vue.js"></script>
+  <script src="../components/clientSignup.js"></script>
+</body>
+</html>

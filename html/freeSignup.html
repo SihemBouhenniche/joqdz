@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>joq-v0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/freeSignup.css">
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+</head>
+<body>
+
+	<div id="freeSignup">
+		<div id="headerpage">
+      		<nav class="navbar navbar-expand-sm bg-dark navbar-dark nav-page">
+        		<a class="navbar-brand brand" href="#app">JOQ</a>
+        	</nav>
+  		</div>
+  		<div class="container-fluid container-page">
+  			<nav class="nav nav-tabs cadre-nav container-page2" id="nav-tab" role="tablist">
+	    		<a class="nav-item nav-link active border1" id="nav-home-tab" data-toggle="tab" href="#Basics" role="tab" aria-controls="home" aria-expanded="true">Basics</a>
+
+	    		<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#Identification" role="tab" aria-controls="profile" aria-expanded="false">Identification</a>
+
+	    		<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#Skills" role="tab" aria-controls="profile" aria-expanded="false">Skills</a>
+
+	    		<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#Experiences" role="tab" aria-controls="profile" aria-expanded="false">Experiences</a>   
+	 		</nav>
+  			<form  class ="form-style">
+	  			<div class="tab-content cadre container-page1" id="nav-tabContent ">
+	  				<div class="tab-pane fade active show" id="Basics" role="tabpanel" aria-labelledby="nav-profile-tab" aria-expanded="false">
+		 				<div class="form-group">
+	    					<label for="fname">First Name : </label>
+	   	    				<input type="text" class="form-control" placeholder="Enter your first name" id="fname" v-model = "fname">
+	  					</div>
+	  					<div class="form-group">
+	    					<label for="lname">Last Name : </label>
+	   	    				<input type="text" class="form-control" placeholder="Enter your last name" id="lname" v-model = "lname">
+	  					</div>
+	  					<div class="form-group">
+	    					<label for="email">Email</label>
+	   	    				<input type="email" class="form-control" placeholder="Enter email" id="email" v-model = "email">
+	  					</div>
+	  					<div class="form-group">
+	   	   	    			<label for="pwd">Password :</label>
+	   	    				<input type="password" class="form-control" placeholder="Enter password" id="password" v-model = "password">
+	 	 				</div>
+	 	 				<div class="form-group">
+	   	   	    			<label for="pwd">Confirm Your Password :</label>
+	   	    				<input type="password" class="form-control" placeholder="Enter password" id="pwd" v-model = "pwd">
+	 	 				</div>
+	 	 				<div class="form-group">
+	   	   	    			<label for="address">Address : </label>
+	   	    				<input type="text" class="form-control" placeholder="Enter your address" id="address" v-model = "adress">
+	 	 				</div>
+	 	 				<div class="form-group">
+	   	   	    			<label for="bth">Birth Day : </label>
+	   	    				<input type="date" class="form-control" placeholder="Enter your birth day" id="bth" v-model = "bth">
+	 	 				</div>
+	 	 				<div class="form-group">
+	   	   	    			<label for="skype">Skype ID : </label>
+	   	    				<input type="text" class="form-control" placeholder="Enter your skype id" id="skype" v-model = "skype">
+	 	 				</div>
+	 	 				<div class="form-group">
+	   	   	    			<label for="phone">phone : </label>
+	   	    				<input type="phone" class="form-control" placeholder="Enter your phone number" id="phone" v-model = "phone">
+	 	 				</div>
+		 			</div>
+	   				<div class="tab-pane fade " id="Identification" role="tabpanel" aria-labelledby="nav-home-tab" aria-expanded="true">
+	   					<h3>Photo : </h3>
+			  			<div class="row">
+			  				<div class="col-sm-6 div"></div>
+			  				<div class="col-sm-4">
+			  					<button class="btn btn-info">Browse</button>
+			  				</div>
+			  			</div>
+			  			<h3>Id (scanned) : </h3>
+			  			Could be one of the following : (National card, driver's license, passwport)
+			  			<div class="row">
+			  				<div class="col-sm-6 div"></div>
+			  				<div class="col-sm-4">
+			  					<button class="btn btn-info">Browse</button>
+			  				</div>
+			  			</div>			  			
+	   	 			</div>
+
+	   	 			<div class="tab-pane fade " id="Skills" role="tabpanel" aria-labelledby="nav-profile-tab" aria-expanded="false">
+	      				<div class="skill">
+	      					<!--Radio group-->
+	      					<span class="span">Skill 1</span>
+							<div class="form-check">
+							    <input name="102" type="radio" class="form-check-input with-gap" id="radio106">
+							    <label class="form-check-label" for="radio106">Mobile</label>
+							</div>
+
+							<div class="form-check">
+							    <input name="102" type="radio" class="form-check-input with-gap" id="radio107" checked>
+							    <label class="form-check-label" for="radio107">Web</label>
+							</div>
+
+							<div class="form-check">
+							    <input name="102" type="radio" class="form-check-input with-gap" id="radio108">
+							    <label class="form-check-label" for="radio108">Design</label>
+							</div>
+							<div class="tools">
+		      					<span class="span">Tools</span>
+		      				</div>
+		      				<div class="level">
+		      					<span class="span">Level</span>
+		      					<div class="progress">
+								  	<div class="progress-bar bg-info" style="width:30%"></div>
+								</div>
+		      				</div>	
+	      				</div>
+	      				<button class="btn btn-info" style="margin-top: 20px">Add other skills</button>
+		 			</div>
+
+		 			<div class="tab-pane fade " id="Experiences" role="tabpanel" aria-labelledby="nav-profile-tab" aria-expanded="false">
+	      				<div class="experience">
+	      					<!--Radio group-->
+	      					<span class="span">Project type</span>
+							<div class="form-check">
+							    <input name="102" type="radio" class="form-check-input with-gap" id="radio106">
+							    <label class="form-check-label" for="radio106">Mobile</label>
+							</div>
+
+							<div class="form-check">
+							    <input name="102" type="radio" class="form-check-input with-gap" id="radio107" checked>
+							    <label class="form-check-label" for="radio107">Web</label>
+							</div>
+
+							<div class="form-check">
+							    <input name="102" type="radio" class="form-check-input with-gap" id="radio108">
+							    <label class="form-check-label" for="radio108">Design</label>
+							</div>
+							<div class="form-group">
+	   	   	    				<label for="nameProject">Name : </label>
+	   	    					<input type="text" class="form-control" placeholder="Enter the name of your project" id="nameProject" v-model = nameProject">
+	 	 					</div>
+	 	 					<div class="form-group">
+	   	   	    				<label for="begin">Begin Date : </label>
+	   	    					<input type="date" class="form-control" id="begin" v-model = "begin">
+	 	 					</div>
+	 	 					<div class="form-group">
+	   	   	    				<label for="end">End Date : </label>
+	   	    					<input type="date" class="form-control" id="end" v-model = "end">
+	 	 					</div>
+	 	 					<div class="form-group">
+	   	   	    				<label for="client">client : </label>
+	   	    					<input type="text" class="form-control" placeholder="Enter the name of your client" id="client" v-model = client">
+	 	 					</div>
+		      				<div class="form-group">
+							  	<label for="description">Description:</label>
+							  	<textarea class="form-control" rows="5" id="description"></textarea>
+							</div>
+	      				</div>
+	      				<button class="btn btn-info" style="margin-top: 20px">Add other Experiences</button>
+		 			</div>
+		 		</div>
+			</form>
+			<button type="submit" class="btn btn-info" v-on:click ="provideInfo" style="margin: 20px;">Sign Up</button>
+		</div>	
+  	</div>
+  <script src="../bootstrap/jquery-3.3.1.min.js"></script>
+  <script src="../bootstrap/bootstrap.min.js"></script>
+  <script src="../bootstrap/vue.js"></script>
+  <script src="../components/freeSignup.js"></script>
+</body>
+</html>

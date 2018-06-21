@@ -1,0 +1,43 @@
+#freeSignup{
+	background-color: #f0ede5;
+	font-family: 'Oswald', sans-serif;
+}
+.container-page{
+	padding: 100px 200px;
+}
+.container-page form{
+	background-color: #fff;
+	padding: 50px 30px;
+	border:solid 1px #b4b7ba;
+	border-radius: 20px;
+	border-top: none;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+.h1{
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	color: #17a2b8;
+}
+a{
+	font-family: 'Oswald', sans-serif;
+	color: #17a2b8;
+}
+.div{
+	border:solid 1px #b4b7ba;
+	border-radius: 20px;
+	margin: 20px 50px;
+	height: 200px;
+	width: 100px;
+}
+.skill, .experience{
+	border:solid 1px #b4b7ba;
+	border-radius: 20px;
+	padding: 20px;
+	width: 50%;
+}
+.span {
+	font-size: 1.2em;
+	display: inline-block;
+	padding: 5px;
+}

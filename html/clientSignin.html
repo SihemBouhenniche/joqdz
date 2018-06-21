@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>joq-v0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/client.css">
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+</head>
+<body>
+	<div id="clientSign">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark nav-page">
+	      <a class="navbar-brand brand" href="#app">JOQ</a>
+	    </nav>
+		<div class="container-fluid container-page">
+			<br><br><br><br><br>
+	  		<div class="tab-content cadre container-page1" id="nav-tabContent ">
+	   			<div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" aria-expanded="true">
+		       		<br><br><br>
+		      		<h1 class="h1">Welcome Back</h1>
+		      		<form  class ="form-style" style="padding-top: 0px;">
+			  			<div class="form-group">
+			    			<label for="email">Email</label>
+			   	    		<input type="email" class="form-control" placeholder="Enter email" id="id" v-model = "email">
+			  			</div>
+			  			<div class="form-group">
+			   	   	    	<label for="pwd">Password</label>
+			   	    		<input type="password" class="form-control" placeholder="Enter password" id="pwd" v-model = "password">
+			 	 		</div>
+			  			<div class="form-group form-check">
+			   				<label class="form-check-label">
+			      				<input class="form-check-input" type="checkbox"> Remember me
+			    			</label>
+			  			</div>
+			  			<div class="form-group">
+				 			<a href="./forgot.html"> Forgot your password?</a>
+				 			<a href="./clientSignup.html" style="float: right;"  > Not a member?</a>
+				 		</div>
+			  			<button type="submit" class="btn btn-info" v-on:click= "provideInfo">Sign In</button>
+			 		</form>
+	   	 		</div>
+	   	 		<div class="tab-pane fade " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" aria-expanded="false">
+	     			<br><br><br>
+	      			<h1 class="h1">Welcome Back</h1>
+	      			<form  class ="form-style" style="padding-top: 0px;">
+	  					<div class="form-group">
+	    					<label for="email">Email</label>
+	   	    				<input type="email" class="form-control" placeholder="Enter email" id="email" v-model = "email">
+	  					</div>
+	  					<div class="form-group">
+	   	   	    			<label for="pwd">Password</label>
+	   	    				<input type="password" class="form-control" placeholder="Enter password" id="password" v-model = "password">
+	 	 				</div>
+	  					<div class="form-group form-check">
+	   						<label class="form-check-label">
+	      						<input class="form-check-input" type="checkbox"> Remember me
+	    					</label>
+	  					</div>
+	  					<div class="form-group">
+		 					<a href="./forgot.html" > Forgot your password?</a>
+		 					<a href="./clientSignup.html" style="float: right;"> Not a member?</a>
+		 				</div>
+	  					<button type="submit" class="btn btn-info" v-on:click ="provideInfo">Sign In</button>
+		 			</form>
+		 		</div>
+		 		<div class="alert alert-danger alert-dismissible fade show" v-if = "show">
+			    	<button type="button" class="close" data-dismiss="alert">&times;</button>
+		    		<strong>Warning!</strong> password or email wrong ! 
+		  		</div>
+		 	</div>
+	  		<nav class="nav nav-tabs cadre-nav container-page2" id="nav-tab" role="tablist">
+	    		<a class="nav-item nav-link active border1" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="home" aria-expanded="true">Entreprise</a>
+	    		<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="profile" aria-expanded="false">Individual</a>   
+	 		</nav>
+		</div>
+	</div>
+
+
+
+  <script src="../bootstrap/jquery-3.3.1.min.js"></script>
+  <script src="../bootstrap/bootstrap.min.js"></script>
+  <script src="../bootstrap/vue.js"></script>
+  <script src="../components/client.js"></script>
+</body>
+</html>
