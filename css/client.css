@@ -10,25 +10,17 @@ body{
     font-size: 1.5em;
     font-weight: 700;
   }
+.container-page {
+	padding: 100px 200px;
+} 
 .cadre{
-	position: absolute;
-	left:300px;
-	width: 800px;
 	border:solid 1px #b4b7ba;
 	border-radius: 20px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-top: none;
+	padding-top: 20px;
 }
-.cadre-nav{
-	position: absolute;
-	left:300px;
-	width: 800px;
-	
-}
-/*.border1{
-	border-top:solid 1px #b4b7ba;
-	border-left:solid 1px #b4b7ba;
-	border-right: solid 1px #b4b7ba;
-	border-radius: 5px;
-}*/
 
 .form-style{
 
@@ -64,4 +56,9 @@ body{
  a{
 	font-family: 'Oswald', sans-serif;
 	color: #17a2b8;
+}
+@media only screen and (max-width: 600px) {
+    .container-page {
+		padding: 20px;
+	} 
 }
