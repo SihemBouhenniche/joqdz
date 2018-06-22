@@ -27,7 +27,7 @@ new Vue({
   {
     ID : 'how', 
     title : 'How It Works', 
-    description : 'It s easy. Simply post a job you need completed and receive competitive bids from freelancers within minutes. Whatever your needs, there will be a freelancer to get it done: from web design, mobile app development, virtual assistants, product manufacturing, and graphic design (and a whole lot more). With secure payments and thousands of reviewed professionals to choose from, JOQdz is the simplest and safest way to get work done online.',
+    description : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     color : '#B4B7BA',
     right : true,
     linkImg : ['img/client.png','img/joqer.png']}
