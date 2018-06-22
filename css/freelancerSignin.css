@@ -31,3 +31,8 @@
   .contentForm a{
     color: #17a2b8;
   }
+  @media only screen and (max-width: 600px) {
+    .contentForm{
+        margin: 20px;
+    }
+}
