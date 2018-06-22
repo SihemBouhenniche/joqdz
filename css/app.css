@@ -1,3 +1,6 @@
+.carousel-page{
+  padding:100px 80px;
+}
 .transparent-block{
   background-image: url(../img/back1.jpg);
   background-size: cover;
