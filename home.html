@@ -12,21 +12,30 @@
 <body>
 	<div id="app">
 		<div id="headerpage">
-      		<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top nav-page">
-        	<a class="navbar-brand brand" href="#app">JOQ</a>
-        	<div class="separator"></div>
-        		<ul class="navbar-nav">
-          			<li class="nav-item">
-            			<a class="nav-link" href="#about">About us</a>
-          			</li>
-          			<li class="nav-item">
-            			<a class="nav-link" href="#how">How it works</a>
-          			</li>
-        		</ul>
-        		<button v-on:click="goClient" type="button" class="btn btn-info btn-page">Client</button>
-        		<button v-on:click="goFree" type="button" class="btn btn-info btn-page">Freelancer</button>
-        	</nav>
-  		</div>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top nav-page">
+        <!-- Brand -->
+          <a class="navbar-brand brand" href="#app">JOQ</a>
+
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="separator"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#how">How it works</a>
+                    </li>
+                  </ul>
+                <button v-on:click="goClient" type="button" class="btn btn-info btn-page">Client</button>
+                <button v-on:click="goFree" type="button" class="btn btn-info btn-page">Freelancer</button>
+          </div> 
+        </nav>
     	<!---------------------------------------------------------------------------------------->
     	<div class="container-fluid main-page" style="padding-left: 0px;padding-right: 0px;">
   			<div id="demo" class="carousel slide" data-ride="carousel">
