@@ -29,6 +29,7 @@ a{
 	margin: 20px 50px;
 	height: 200px;
 	width: 100px;
+	padding: 8px 15px;
 }
 .skill, .experience{
 	border:solid 1px #b4b7ba;
@@ -41,6 +42,7 @@ a{
 	display: inline-block;
 	padding: 5px;
 }
+
 @media only screen and (max-width: 600px) {
     .container-page {
 		padding: 20px;

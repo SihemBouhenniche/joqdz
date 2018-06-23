@@ -71,17 +71,25 @@
 	   				<div class="tab-pane fade " id="Identification" role="tabpanel" aria-labelledby="nav-home-tab" aria-expanded="true">
 	   					<h3>Photo : </h3>
 			  			<div class="row">
-			  				<div class="col-sm-6 div"></div>
+			  				<div class="col-sm-6 div">
+			  					<img src="" id="personelphoto">
+			  				</div>
 			  				<div class="col-sm-4">
-			  					<button class="btn btn-info">Browse</button>
+			  					<label class="btn btn-info">
+               						Browse&hellip; <input type="file" style="display: none;" id="photo" accept="image/*" v-on:change = "processFile($event)">
+            					</label>
 			  				</div>
 			  			</div>
 			  			<h3>Id (scanned) : </h3>
 			  			Could be one of the following : (National card, driver's license, passwport)
 			  			<div class="row">
-			  				<div class="col-sm-6 div"></div>
+			  				<div class="col-sm-6 div">
+			  					<img src="" id="idphoto">
+			  				</div>
 			  				<div class="col-sm-4">
-			  					<button class="btn btn-info">Browse</button>
+			  					<label class="btn btn-info">
+               						Browse&hellip; <input type="file" style="display: none;" accept="image/*" v-on:change = "processFileid($event)">
+            					</label>
 			  				</div>
 			  			</div>			  			
 	   	 			</div>
@@ -137,7 +145,7 @@
 							</div>
 							<div class="form-group">
 	   	   	    				<label for="nameProject">Name : </label>
-	   	    					<input type="text" class="form-control" placeholder="Enter the name of your project" id="nameProject" v-model = nameProject">
+	   	    					<input type="text" class="form-control" placeholder="Enter the name of your project" id="nameProject" v-model = "nameProject">
 	 	 					</div>
 	 	 					<div class="form-group">
 	   	   	    				<label for="begin">Begin Date : </label>
@@ -149,7 +157,7 @@
 	 	 					</div>
 	 	 					<div class="form-group">
 	   	   	    				<label for="client">client : </label>
-	   	    					<input type="text" class="form-control" placeholder="Enter the name of your client" id="client" v-model = client">
+	   	    					<input type="text" class="form-control" placeholder="Enter the name of your client" id="client" v-model = "client">
 	 	 					</div>
 		      				<div class="form-group">
 							  	<label for="description">Description:</label>
@@ -167,5 +175,17 @@
   <script src="../bootstrap/bootstrap.min.js"></script>
   <script src="../bootstrap/vue.js"></script>
   <script src="../components/freeSignup.js"></script>
+  <script>
+  	$(function() {
+
+		  // We can attach the `fileselect` event to all file inputs on the page
+		  $(document).on('change', ':file', function() {
+		    var input = $(this),
+		        numFiles = input.get(0).files ? input.get(0).files.length : 1,
+		        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+		    input.trigger('fileselect', [numFiles, label]);
+		  });
+		});
+  </script>
 </body>
 </html>
