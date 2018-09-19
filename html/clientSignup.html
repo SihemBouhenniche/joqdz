@@ -74,5 +74,10 @@
   <script src="../bootstrap/bootstrap.min.js"></script>
   <script src="../bootstrap/vue.js"></script>
   <script src="../components/clientSignup.js"></script>
+	<script>
+    window.onbeforeunload = function() {
+      return hj('exit', 'commande_trigger')
+    }
+  </script>
 </body>
 </html>
