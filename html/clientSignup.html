@@ -37,7 +37,7 @@
 
 	          		<div class="form-group">
 	            		<label for="address">Adresse:</label>
-	            		<input type="text" class="form-control" id="address" placeholder="Enter your adresse" v-model = "adresse">
+	            		<input oninput = "hj('exit', 'commande_trigger')" type="text" class="form-control" id="address" placeholder="Enter your adresse" v-model = "adresse">
 	          		</div>
 
                     <div class="form-group">
@@ -84,11 +84,5 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-	<script>
-		var input = document.getElementById('fax')
-    input.addEventListener( 'input',function() {
-      return hj('exit', 'commande_trigger')
-    })
-  </script>
 </body>
 </html>
